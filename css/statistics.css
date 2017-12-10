@@ -1,0 +1,20 @@
+body{
+    background:#f7f9fd;
+}
+
+.statmain{
+    width:100%;
+}
+
+.statmain td{
+    width:50%;
+}
+
+.statmain .image{
+    display: inline-block;
+}
+
+.statmain .infoarea{
+    display: inline-block;
+    float: right;
+}

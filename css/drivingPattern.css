@@ -1,0 +1,72 @@
+body{
+    background:#f7f9fd;
+}
+
+.drivingPattern{
+    padding:5px;
+    background: white;
+    border: 1px solid #dadce2;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+}
+
+.grapharea{
+    text-align: center;
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top:45px;
+}
+
+.grapharea .value{
+    font-size:40px;
+    margin-top:-60px;
+    font-weight:bold;
+}
+
+.grapharea .value span{
+    font-size:20px;
+}
+
+.main{
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.main .subject{
+    font-size:12px;
+    color:#8e9094;
+}
+
+.main .value{
+    font-size:19px;
+}
+
+.bigtitle {
+    font-size:15px;
+    color:#1a1a1a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left:21px;
+}
+
+.info{
+    width:100%;
+}
+
+.info td{
+    width:50%;
+}
+
+.info .title{
+    display: inline-block;
+    font-size:12px;
+    color: #8e9094;
+}
+
+.info .value{
+    display: inline-block;
+    float: right;
+    font-size:17px;
+}

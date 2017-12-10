@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url('/css/font.css');
+
+*{ 
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+	list-style: none; 
+	/* font-family:'³ª´® °íµñ',NanumGothic,'¸¼Àº °íµñ','Malgun Gothic','µ¸¿ò',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-serif; */ 
+	/* font-family:'³ª´® °íµñ',NanumGothic,'¸¼Àº °íµñ','Malgun Gothic','µ¸¿ò',Dotum; */ 
+	font-family:'HanSans','±Ã¼­'; 
+	color:#666666;
+	/* color:#ffffff; */
+	font-size: 12px;
+	/* -webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0); */
+	-webkit-user-select: none;
+}
+html, body{width: 100%; height: 100%;}
+ol, li, ul{list-style: none;}
+a:link, a:visited, a:active { color: #404040; text-decoration: none; }
+/* img{display: block; margin: 0; border:none; max-width: 100%;} */
+img{display: block; margin: 0; border:none;}
+
+.grade_color_1{background-color: #6aaa31;}
+.grade_color_2{background-color: #2bc875;}
+.grade_color_3{background-color: #d4ca2a;}
+.grade_color_4{background-color: #ed9018;}
+.grade_color_5{background-color: #d24b16;}
+.grade_color_6{background-color: #d24b16;}
+
+#wrapper{}
+.mainWrapper{padding: 30px 40px 0px 40px;}
+
+#wrapper header{width: 100%;}
+#wrapper section{width: 100%;}
+
+#login_id{margin-top: 28px; width: 100%; height: 40px; border: 1px #b3b3b3 solid; font-size: 14px; text-indent: 1em;}
+#login_pw{margin-top: 20px; width: 100%; height: 40px; border: 1px #8dbd4c solid; font-size: 14px; text-indent: 1em;}
+#boxSaveId{margin-top: 10px;}
+#boxSaveId input{margin: 0; padding: 0; vertical-align: middle;}
+#boxSaveId span{color: #999999;}
+.line{margin-top: 10px; margin-bottom: 10px; width: 100%; height: 1px; background-color: #e2e2e2;}
+#boxLogin{margin-top: 10px; font-size: 16px; padding-top: 10px; color: #ffffff; text-align: center; vertical-align: middle; width: 100%; height: 33px; background-color:#8dbd4c; -moz-border-radius: 3px; /*¸ðÁú¶ó*/ -webkit-border-radius: 3px; /*À¥Å¶*/ /*IE9+,FF4+,chrome,Safari5,+opera*/ border-radius: 3px;}
+.imgCenter{margin: 0 auto}
+
+/* dashboard */
+.defaultWrapper {margin-bottom:20px; background:#f7f7f7;}
+.defaultWrapper header{height: 44px; background-color: #8dbd4c; width: 100%;}
+.defaultWrapper header #calBox{float: left; margin: 14px 0px 0px 14px;}
+/*.defaultWrapper header #logBox{float: right; margin: 14px 0px 0px 14px;}*/
+.defaultWrapper header #selectedDate{color: #ffffff; text-align: center; width: 100%; padding-top: 12px; margin-left: -14px; font-weight: bold; font-size: 16px;}
+
+.defaultWrapper #infoBox{height: 37px; border-bottom: 1px #eff1ef solid; vertical-align: middle; padding: 15px 0px 0px 13px;}
+.defaultWrapper #infoBox .driveInfoBox{float: left; width: 50%; text-align: left;}
+.defaultWrapper #infoBox .driveInfoBox img{display: inline; margin: 0; padding: 0; vertical-align: middle;float: left;}
+.defaultWrapper #infoBox .driveInfoBox div{font-size: 14px; margin-top: 2px; float: left; margin-left: 6px;}
+.defaultWrapper #infoBox .distanceInfoBox{float: right; width: 50%; text-align: right;}
+
+.defaultWrapper #infoBox .distanceInfoBox img{display: inline; margin: 0; padding: 0; vertical-align: middle;}
+.defaultWrapper #infoBox .distanceInfoBox div{font-size: 14px; margin-top: 2px; float: right; margin-left: 6px;}
+
+.defaultWrapper #chartInfoBox{width: 100%; padding-bottom:20px;}
+.defaultWrapper #chartInfoBox table{width: 95%; margin:auto;}
+.defaultWrapper #chartInfoBox .bb {border-bottom:1px #cbcbcb dashed; height:5px;}
+
+.defaultWrapper #chartInfoBox .scoreTable {height:60px; margin-top:10px; width:100%;}
+.defaultWrapper #chartInfoBox .scoretd {width:30%;}
+.defaultWrapper #chartInfoBox .scoretd2 {width:40%;}
+.defaultWrapper #chartInfoBox .score{font-size:16px; text-align:center;  margin:10px 0px; font-size:10px;}
+.defaultWrapper #chartInfoBox .score .nurmber {font-size:18px; font-weight:bold; color:#686868; }
+.defaultWrapper #chartInfoBox .score .unit {font-size:12px; font-weight:normal;}
+.defaultWrapper #chartInfoBox .chartBox {}
+.defaultWrapper #chartInfoBox .chartBoxDiv {position:relative; width:80px; height:60px; float:left;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle {position:absolute; width:52px; height:52px; border-radius:30px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; background:#f5f5f5; border:4px #cbcbcb solid;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle1 {position:absolute; width:52px; height:52px; border-radius:30px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; background:#f5f5f5; border:4px #8cbc4c solid;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle2 {position:absolute; width:52px; height:52px; border-radius:30px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; background:#f5f5f5; border:4px #b1e555 solid;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle3 {position:absolute; width:52px; height:52px; border-radius:30px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; background:#f5f5f5; border:4px #ffc875 solid;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle4 {position:absolute; width:52px; height:52px; border-radius:30px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; background:#f5f5f5; border:4px #ff9319 solid;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle5 {position:absolute; width:52px; height:52px; border-radius:30px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; background:#f5f5f5; border:4px #f16863 solid;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle .ecoarrow {margin-top:5px;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle .ecoscore {font-size:24px; line-height:24px; color:#8cbc4c;font-weight:bold;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .circle .ecoUnit {font-size:10px; line-height:12px; color:#565656;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .gradearrow {margin-top:5px;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .gradeScore {font-size:24px; line-height:24px; color:#565656;font-weight:bold;}
+.defaultWrapper #chartInfoBox .chartBoxDiv .gradeUnit {font-size:10px; line-height:12px; color:#999999;}
+.defaultWrapper #chartInfoBox .chartBox #piechartDiv{position:absolute; width:60px; height:60px; left:50%; top:50%; margin-left:-30px; margin-top:-20px; }
+.defaultWrapper #chartInfoBox .chartBox .piechartLegendInfo{float: right; width: 75%; text-align: left;}
+.defaultWrapper #chartInfoBox .chartBox .piechartLegendInfo ul li{padding-bottom: 5px;}
+.defaultWrapper #chartInfoBox .chartBox .piechartLegendInfo ul li img{display: inline; vertical-align: middle; margin: 0; padding: 0px;}
+
+.defaultWrapper #ecoInfoBox{height: 37px; border-bottom: 1px #eff1ef solid; padding: 20px 0px 0px 13px;}
+.defaultWrapper #ecoInfoBox ul li span{font-size: 12px; color: #666666; font-weight: bold;}
+.defaultWrapper #ecoInfoBox img{display: inline; vertical-align: middle; margin: 0; padding: 0px;}
+.defaultWrapper #ecoInfoBox .leftBox{float: left; width: 40%; vertical-align: middle;}
+.defaultWrapper #ecoInfoBox .leftBox .value{font-size: 1.5em;}
+.defaultWrapper #ecoInfoBox .rightBox .value{font-size: 1.5em;}
+.defaultWrapper #ecoInfoBox .rightBox{float: right; width: 60%; text-align: right;}
+
+#avgTripInfoBox{height: 37px; vertical-align: middle; padding: 15px 27px 9px 13px;}
+#avgTripInfoBox ul li{float: left; width: 33.33%; text-align: right;}
+#avgTripInfoBox ul li .label{font-size: 1.1em; color: #b3b3b4}
+#avgTripInfoBox ul li .value span{font-size: 1.3em; color: #54702d; font-weight: bold; margin-top: 4px;}
+
+#firstTripLinkedBox{margin-top: 5px;}
+#firstTripLinkedBox hr{width: 100%; height: 1px; float: left;}
+#firstTripLinkedBox div{margin-left: 31px; float: left; margin-top: -30px;}
+#firstTripLinkedBox div .circle{background-color: #e6e6e6; width: 18px; height: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px;}
+#firstTripLinkedBox div .bar{width: 4px; height: 65px; background-color: #b3b3b3; margin-left: 7px; z-index: -1}
+
+#firstTripTimeBox{height: 55px; background-color: #f7f7f7;}
+#firstTripTimeBox .sign{float: left; position: relative; border: 3px #ffffff solid; width: 26px; height: 26px; -webkit-border-radius: 26px; -moz-border-radius: 26px; margin-left: -25px; margin-top: 10px;}
+#firstTripTimeBox .time{padding-top: 20px; padding-left: 65px; font-size: 14px;}
+
+.noneItem{text-align: center; padding-top: 40px; font-weight: bold; font-size: 14px; color: #666666; border-top: 1px #d2d6cb solid; background-color: #f7f7f7;}
+.noneItemHr{border-top: 1px #e4e6e1 solid;}
+.tripItemBox{padding: 0px 10px 0px 10px; background-color: #f7f7f7;}
+.tripItemBox div{border: 1px #d4d9ce solid; background-color: #ffffff}
+.tripItemBox div table{width: 100%; border-spacing: 0px; padding: 0px; border-collapse: collapse;}
+.tripItemBox div table tr td{text-align: right; width: 33.33%;}
+.tripItemBox div table tr td .topTitlePadding{padding-top: 10px;}
+.tripItemBox div table tr td .title{color: #999999;}
+.tripItemBox div table tr td .result{font-size: 14px; font-weight: bold; margin-top: 6px; color: #666666;}
+.tripItemBox div table tr td img{display: inline; vertical-align: middle; margin: 0; padding: 0px; padding: 0px 10px 0px 10px;}
+
+.etcTripLinkedBox div{background-color: #f7f7f7; height: 52px;}
+.etcTripLinkedBox div .sign{float: left; width: 18px; height: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; margin-top: 20px; margin-left: 29px; border: 2px #ffffff solid;}
+.etcTripLinkedBox div .time{float: left; font-size: 14px; margin-top: 23px; margin-left: 10px;}
+.etcTripLinkedBox div .bar{width: 4px; height: 52px; background-color: #b3b3b3; margin-left: 7px; margin-left: 38px;}
+
+.chartSection{display: none;}
+.noChartSection{display: none; background-color: #f7f7f7}
+
+
+
+.toggleItem{display: none; border: none;}
+.toggleItem .mapBox{height: 200px; border: none; padding-right: 10px; margin-left: 10px;}
+.toggleItem .addressBox{height: 64px; border: none; padding: 10px 10px 0px 10px;}
+.toggleItem .addressBox span{font-size: 14px; height: 15px; display: block; padding: 3px 0px 3px 0px;}
+
+.toggleItem .addressBox .to{float: right; vertical-align: top;}
+
+
+/* Â÷Æ® ÆäÀÌÁö */
+.chartArticle{padding: 10px 10px 0px 10px;}
+/* .chartArticle .title{
+	border: 1px #d5d9ce solid; 
+	border-bottom: 0px; 
+	height: 22px; 
+	padding: 10px 0px 0px 10px;
+	background: linear-gradient(#f7f7f7, #ebebeb);
+	font-weight: bold;
+} */
+.chartArticle .title img{display: inline; vertical-align: middle; margin-top: -2px;}
+.chartArticle .chartDiv{height: 165px;}
+.chartArticle #titleTable{width: 100%; border-spacing: 0px; padding: 0px; border-collapse: collapse; border: none; margin-bottom:10px;  border-bottom:2px #8dbd4c solid;} 
+.chartArticle #titleTable td .header{margin: 10px 0px 10px 10px; line-height: 17px;}
+.chartArticle #titleTable td .header img{display: inline; vertical-align: middle; padding-top: -2px;}
+.chartArticle #titleTable td .header span{font-size: 17px; font-weight: bold; padding-left: 6px; vertical-align: bottom;}
+
+.chartArticle #statTable{width: 100%; border-spacing: 0px; padding: 0px; border: none; margin-bottom:10px; background:#f5f5f5; border-top:1px solid #d5d8d1; border-right:1px solid #d5d8d1;} 
+.chartArticle #statTable td{border: 1px solid #d5d8d1; border-top:1px solid #fff; border-right:1px solid #ffffff; width: 50%;}
+.chartArticle #statTable td .header{margin: 10px 0px 0px 10px;}
+.chartArticle #statTable td .header img{display: inline; vertical-align: middle; padding-top: -2px;}
+.chartArticle #statTable td .header span{font-size: 17px; font-weight: bold; padding-left: 6px; vertical-align: bottom;}
+.chartArticle #statTable tbody td{padding: 10px; font-size: 12px;}
+.chartArticle #statTable tbody td .value span{width: 100%; text-align: right; font-size: 16px; font-weight: bold;}
+.chartArticle #statTable tbody td .value{width: 100%; text-align: right; font-size: 16px; font-weight: bold;}
+.chartArticle #statTable .lablePeriodWrap{height: 40px; background-color: #f8f8f8;}
+.chartArticle #statTable .lablePeriodWrap #lablePeriod{font-size: 14px; font-weight: bold;}
+
+.chartArticle #chartTable{width: 100%; border-spacing: 0px; padding: 0px; border: none; margin-bottom:10px; border-collapse:collapse; background:#ffffff;} 
+.chartArticle #chartTable td{border: 1px solid #d5d8d1; width: 50%;}
+.chartArticle #chartTable td .header{margin: 10px 0px 0px 10px;}
+.chartArticle #chartTable td .header img{display: inline; vertical-align: middle; padding-top: -2px;}
+.chartArticle #chartTable td .header span{font-size: 17px; font-weight: bold; padding-left: 6px; vertical-align: bottom;}
+.chartArticle #chartTable tbody td{padding: 10px; font-size: 12px;}
+.chartArticle #chartTable tbody td .value span{width: 100%; text-align: right; font-size: 16px; font-weight: bold;}
+.chartArticle #chartTable tbody td .value{width: 100%; text-align: right; font-size: 16px; font-weight: bold;}
+.chartArticle #chartTable .lablePeriodWrap{height: 40px; background-color: #f8f8f8;}
+.chartArticle #chartTable .lablePeriodWrap #lablePeriod{font-size: 14px; font-weight: bold;}
+
+.chartArticle #itemListBox{width: 100%; padding: 0; margin: 0; margin-bottom:10px;}
+.chartArticle #itemListBox .itemTable{width: 100%; border-spacing: 0px; padding: 0px;  margin-top: 3px; background:#f5f5f5; border-top:1px solid #d5d8d1; border-right:1px solid #d5d8d1;}
+.chartArticle #itemListBox .itemTable td{width: 50%; border: 1px solid #d5d8d1; border-top:1px solid #fff; border-right:1px solid #ffffff;}
+.chartArticle #itemListBox .itemTable td .header{margin: 10px 0px 12px 10px;}
+.chartArticle #itemListBox .itemTable td .header img{display: inline; vertical-align: middle; padding-top: -2px;}
+.chartArticle #itemListBox .itemTable td .header span{font-size: 17px; font-weight: bold; padding-left: 6px; vertical-align: bottom;}
+.chartArticle #itemListBox .itemTable tbody td{padding: 10px; font-size: 12px;}
+.chartArticle #itemListBox .itemTable tbody td .value span{width: 100%; text-align: right; font-size: 16px; font-weight: bold;}
+.chartArticle #itemListBox .itemTable tbody td .value{width: 100%; text-align: right; font-size: 16px; font-weight: bold;}
+
+/* ÀüÃ¼ ¸Ê ÆäÀÌÁö */
+#infoWindow{width: 100%; background: #465568;}
+#infoWindow div{padding: 10px 20px 20px 15px;}
+#infoWindow div .toDate{font-weight: bold; color: #ffffff; font-size: 13px; line-height: 25px;}
+#infoWindow div .from{color: #ffffff; line-height: 15px;}
+#infoWindow div .to{color: #ffffff;}
+#mapDiv{width: 100%; height: 100%; padding: 0px; margin: 0px;}
+
+
+/*¿Â¸®À¥ºä*/
+.chartTab {width:100%;}
+.chartTab td {width:33%; padding:10px 0px; background:#f5f5f5; border-top:5px #f5f5f5 solid;}
+.chartTabOn {border-bottom:5px #8dbd4d solid; text-align:center; font-size:12px;}
+.chartTabOff {border-bottom:5px #f5f5f5 solid; text-align:center; font-size:12px;}
+.chartTabDiv {width:99%; text-align:center;}
+.chartTab .br {border-right:1px #cbcbcb solid;}
+
+.datetable {width: 100%; border-spacing: 0px; padding: 0px; border-collapse: collapse; border:none; margin-bottom:10px;}
+
+.datetable .lablePeriodWrapLeft{height: 30px; width:60%;}
+.datetable .lablePeriodWrapLeft #lablePeriod{font-size: 14px; font-weight: bold;}
+.datetable .lablePeriodWrapRight{height: 30px; text-align:right;}
+.datetable .lablePeriodWrapRight .on{color:#8cbc4c;}

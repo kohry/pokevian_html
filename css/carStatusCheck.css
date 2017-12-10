@@ -1,0 +1,105 @@
+body{
+    background:#f7f9fd;
+}
+
+.upper {
+    background: white;
+    /* margin: 10px; */
+    border: 1px solid #dadce2;
+    text-align: center;
+}
+
+.upper .title{
+    font-size: 19px;
+    color: black;
+    margin-top: 15px;
+}
+
+.upper .graph{
+    margin-top: 15px;
+}
+
+.lower {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.lower table{
+    width: 100%;
+}
+
+.lower .subject {
+    font-size: 15px;
+    color: #6d7783;
+}
+
+.lower .upperrow .icon {
+    margin-top: 3px;
+}
+
+.lower .upperrow .graph {
+    margin-top:-35px;
+}
+
+.lower .lowerrow .icon {
+    margin-top: 3px;
+}
+
+.lower .lowerrow .graph {
+    margin-top:-8px;
+}
+
+.horizontal_line {
+    height: 1px;
+    margin: 10px;
+    background: #dadce2;
+}
+
+.footer.guide{
+    font-size:12px;
+    color: #777777;
+    padding-top:8px;
+    padding-bottom:8px;
+    margin-top: 12px;
+    border: 1px solid #dadce2;
+}
+
+
+.footer table{
+    width: 100%;
+    line-height: 10px;
+    text-align: center;
+}
+
+.footer .icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.footer .icon1 {
+    background: #2684cd;
+}
+
+.footer .icon2 {
+    background: #26cdc3;
+}
+
+.footer .status{
+    display: inline-block
+}
+
+.footer .icon3 {
+    background: #ffc64b;
+}
+
+.footer .icon4 {
+    background: #fa5f4b;
+}
+
+
+
+
+
+

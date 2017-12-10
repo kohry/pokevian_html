@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-title" content="nexmobility" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, device-dpi=medium-dpi"
+    />
+    <title>nexmobility</title>
+    <link rel="stylesheet" type="text/css" href="css/drivingPattern.css" />
+    <script type="text/javascript" src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/commons.js"></script>
+    <script type="text/javascript" src="mobile/v1/js/commons.js"></script>
+    <script type="text/javascript" src="js/plugin/moment.js"></script>
+    <script type="text/javascript" src="js/plugin/moment-timezone.js"></script>
+    <script type="text/javascript" src="js/plugin/progress.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <table class="chartTab">
+        <tr>
+            <td>오늘</td>
+            <td>이번주</td>
+            <td>이번달</td>
+        </tr>
+    </table>
+
+    <div class="drivingPattern">
+
+        <div class="grapharea">
+            <div id="graph1"></div>
+            <div class="value">85<span> 점</span></div>
+        </div>
+
+        <table class="main">
+            <tr>
+                <td>
+                    <div class="subject">
+                        주행시간
+                    </div>
+                    <div class="value">
+                        <span>9:38:04</span><span></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="subject">
+                        주행시간
+                    </div>
+                    <div class="value">
+                        <span>411</span><span> km</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="subject">
+                        주행시간
+                    </div>
+                    <div class="value">
+                        <span>42</span><span> km/h</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="subject">
+                        주행시간
+                    </div>
+                    <div class="value">
+                        <span>255</span><span> km/h</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="subject">
+                        주행시간
+                    </div>
+                    <div class="value">
+                        <span>14</span><span> 회</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="subject">
+                        주행시간
+                    </div>
+                    <div class="value">
+                        <span>23</span><span> 회</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="bigtitle">에코패턴</div>
+
+        <table class="eco info">
+
+            <tr>
+                <td>
+                    <div class="title">공회전자제</div>
+                    <div class="value">100점</div>
+                    <div id="graph2_1" class="part idling"></div>
+                </td>
+                <td>
+                    <div class="title">경제속도</div>
+                    <div class="value">100점</div>
+                    <div id="graph2_2" class="part economy"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="title">관성운전</div>
+                    <div class="value">100점</div>
+                    <div id="graph2_3" class="part inertia"></div>
+                </td>
+                <td>
+                    <div class="title">엔진부하</div>
+                    <div class="value">100점</div>
+                    <div id="graph2_4" class="part engine"></div>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="bigtitle">위험패턴</div>
+
+        <table class="warning info">
+
+            <tr>
+                <td>
+                    <div class="title">과속자제</div>
+                    <div class="value">100점</div>
+                    <div id="graph3_1" class="part idling"></div>
+                </td>
+                <td>
+                    <div class="title">가감속</div>
+                    <div class="value">100점</div>
+                    <div id="graph3_2" class="part idling"></div>
+                </td>
+            </tr>
+
+        </table>
+
+
+    </div>
+</body>
+
+<script>
+    var progressBar = new ProgressBar.SemiCircle('#graph1', {
+        strokeWidth: 5,
+        color: '#26cdc3',
+    });
+    progressBar.animate(1, {
+        duration: 200
+    }, function () {
+        console.log('Animation has finished');
+    });
+
+    drawLineGraph('#graph2_1', '#337ce2', 1)
+    drawLineGraph('#graph2_2', '#337ce2', 1)
+    drawLineGraph('#graph2_3', '#337ce2', 1)
+    drawLineGraph('#graph2_4', '#337ce2', 1)
+    drawLineGraph('#graph3_1', '#15488f', 1)
+    drawLineGraph('#graph3_2', '#15488f', 1)
+
+
+    function drawLineGraph(id, color, value) {
+        var progressBar = new ProgressBar.Line(id, {
+            strokeWidth: 5,
+            color: color,
+        });
+        progressBar.animate(value, {
+            duration: 200
+        }, function () {
+            console.log('Animation has finished');
+        });
+    }
+
+</script>
+
+</html>

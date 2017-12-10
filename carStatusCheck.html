@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-title" content="nexmobility" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, device-dpi=medium-dpi"
+    />
+    <title>nexmobility</title>
+    <link rel="stylesheet" type="text/css" href="css/carStatusCheck.css" />
+    <script type="text/javascript" src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/commons.js"></script>
+    <script type="text/javascript" src="mobile/v1/js/commons.js"></script>
+    <script type="text/javascript" src="js/plugin/moment.js"></script>
+    <script type="text/javascript" src="js/plugin/moment-timezone.js"></script>
+
+</head>
+
+<body>
+
+    <div class="carStatusCheck">
+
+        <div class="upper part total">
+
+            <div class="title">종합평가</div>
+            <div class="graph"><img src="ccaimage/graph_total_4.png"></div>
+
+        </div>
+
+
+        <div class="lower">
+
+            <table>
+                <tr class="upperrow">
+                    <td class="part perf">
+                        <div class="subject">퍼포먼스</div>
+                        <div class="icon"><img src="ccaimage/graph_arch_2.png"></div>
+                        <div class="graph"><img src="ccaimage/icon_performance.png"></div>
+                    </td>
+                    <td class="part eff">
+                        <div class="subject">연비</div>
+                        <div class="icon"><img src="ccaimage/graph_arch_2.png"></div>
+                        <div class="graph"><img src="ccaimage/icon_fuel.png"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="horizontal_line"></div>
+
+            <table>
+                <tr class="lowerrow">
+                    <td class="part battery">
+                        <div class="subject">배터리</div>
+                        <div class="icon"><img src="ccaimage/icon_battery.png"></div>
+                        <div class="graph"><img src="ccaimage/graph_bar_4.png"></div>
+                    </td>
+                    <td class="part battery">
+                        <div class="subject">쿨런트</div>
+                        <div class="icon"><img src="ccaimage/icon_coolent.png"></div>
+                        <div class="graph"><img src="ccaimage/graph_bar_2.png"></div>
+                    </td>
+                    <td class="part battery">
+                        <div class="subject">DTC</div>
+                        <div class="icon"><img src="ccaimage/icon_dtc.png"></div>
+                        <div class="graph"><img src="ccaimage/graph_bar_3.png"></div>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div class="footer guide">
+            <table>
+                <tr class="footerrow">
+                    <td>
+                        <div class="icon icon1"></div>
+                        <div class="status">우수</div>
+                    </td>
+                    <td>
+                        <div class="icon icon2"></div>
+                        <div class="status">양호</div>
+                    </td>
+                    <td>
+                        <div class="icon icon3"></div>
+                        <div class="status">미흡</div>
+                    </td>
+                    <td>
+                        <div class="icon icon4"></div>
+                        <div class="status">불량</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
